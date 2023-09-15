@@ -30,14 +30,14 @@ export default function HomePage() {
 
 
   return (
-    <div className="px-[10px]">
+    <div className=" w-[100%] ">
       <Header />
-      <div className="w-[100%] bg-[#f0f5fc] py-5 px-[60px] mb-5 flex items-center space-x-4 ">
+      {/* <div className="w-[100%] bg-[#f0f5fc] py-5 px-[60px] mb-5 flex items-center space-x-4 ">
     <button className="btn bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4  "> Trending</button>
     <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita optio obcaecati deserunt tenetur tempora vel  magni.</div>
-      </div>
-      {/* <Modal /> */}
-      <div className="grid grid-cols-2 gap-4 ">
+      </div> */}
+      
+      {/* <div className="grid grid-cols-2 gap-4 ">
         {
         news?.articles?.map((row, index) =>{
           const _d= new Date(row.publishedAt).toDateString()
@@ -54,28 +54,13 @@ export default function HomePage() {
           </div>
         </div>
         
-        {/* <div className="grid grid-row-2 gap-4 h-[400px]">
-          <div className="h-[190px] relative">
-          <img  className=" w-full h-full object-cover "  src={row.urlToImage} />
-           <div className="absolute text-white w-full bottom-0 p-6 ">
-            <div className="text-sm">June 20, 2018</div>
-            <div className="text-2xl">Traffic probmelm is a probme oo</div>
-          </div>
-          </div>
-          <div className="h-[190px] relative">
-          <img  className="h-full w-full object-cover "  src="https://c.biztoc.com/p/30ab2949a45d552c/s.webp" />
-           <div className="absolute text-white w-full bottom-0 p-6 ">
-            <div className="text-sm">June 20, 2018</div>
-            <div className="text-2xl">Traffic probmelm is a probme oo</div>
-          </div>
-          </div>
-        </div> */}
+    
       </>
           )
         })
       }
       {showModal && <Modal data={selectedData} toggleModal={toggleModal} />}
-      </div>
+      </div> */}
       
       
     </div>
