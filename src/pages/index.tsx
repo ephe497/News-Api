@@ -32,12 +32,12 @@ export default function HomePage() {
   return (
     <div className=" w-[100%] ">
       <Header />
-      {/* <div className="w-[100%] bg-[#f0f5fc] py-5 px-[60px] mb-5 flex items-center space-x-4 ">
+      <div className="w-[100%] bg-[#f0f5fc] py-5 px-[20px] lg:px-[60px] md:px-[40px] mb-5 block lg:flex md:flex items-center space-x-0 md:space-x-4 lg:space-x-4 ">
     <button className="btn bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4  "> Trending</button>
-    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita optio obcaecati deserunt tenetur tempora vel  magni.</div>
-      </div> */}
+    <div className="mt-3 md:mt-0 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita optio obcaecati deserunt tenetur tempora vel  magni.</div>
+      </div>
       
-      {/* <div className="grid grid-cols-2 gap-4 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-[15px] md:px-[10px] ">
         {
         news?.articles?.map((row, index) =>{
           const _d= new Date(row.publishedAt).toDateString()
@@ -60,7 +60,7 @@ export default function HomePage() {
         })
       }
       {showModal && <Modal data={selectedData} toggleModal={toggleModal} />}
-      </div> */}
+      </div>
       
       
     </div>
