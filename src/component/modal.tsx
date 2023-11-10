@@ -10,7 +10,7 @@ export default function Modal ({data ,toggleModal}) {
                <h1 className="text-2xl font-bold mb-3"> Author: {data.author}</h1>
                <h3 className="text-xl mb-3">{data.title}</h3>
                <img src={data.urlToImage} />
-               <div>{data.description}</div>
+               <div className="sm:text-xs hidden md:block">{data.description}</div>
                <div></div>
                <div className="text-sm">{data.content}</div>
                <div className="w-full text-center">
